@@ -38,4 +38,6 @@ LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
 #################################################################
+ifeq ($(BOARD_BUILD_UBIFS_TOOLS),true)
 include $(LOCAL_PATH)/ubi-utils/Android.mk
+endif
