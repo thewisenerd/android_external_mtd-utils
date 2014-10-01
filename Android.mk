@@ -1,7 +1,7 @@
 # Copyright 2011 The AMLOGIC Android Open Source Project
 # Author:  Frank Chen <Frank.Chen@amlogic.com>
 
-BUILD_STATIC_TOOLS := false
+BUILD_STATIC_TOOLS := true
 
 LOCAL_PATH:= $(call my-dir)
 
@@ -33,6 +33,7 @@ LOCAL_SHARED_LIBRARIES := libc libcutils
 endif
 
 LOCAL_MODULE := flash_erase
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 

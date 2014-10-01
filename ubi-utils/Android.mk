@@ -19,6 +19,7 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../include/ 
 
 LOCAL_MODULE := libubi
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wall
 
@@ -37,6 +38,7 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../include/ 
 
 LOCAL_MODULE := libubi
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wall
 
@@ -65,6 +67,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubiattach
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
@@ -91,6 +94,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubidetach
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
@@ -124,6 +128,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubiformat
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
@@ -150,6 +155,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubinfo
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
@@ -176,6 +182,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubirename
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 #################################################################
@@ -201,7 +208,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubiupdatevol
-
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
@@ -228,6 +235,7 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubimkvol
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
 
@@ -253,5 +261,6 @@ LOCAL_SHARED_LIBRARIES := libubi libc libcutils
 endif
 
 LOCAL_MODULE := ubirmvol
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_EXECUTABLE)
